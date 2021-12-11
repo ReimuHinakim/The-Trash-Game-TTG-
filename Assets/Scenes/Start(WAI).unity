@@ -235,10 +235,9 @@ GameObject:
   - component: {fileID: 185980384}
   - component: {fileID: 185980383}
   - component: {fileID: 185980382}
-  - component: {fileID: 185980385}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -320,19 +319,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185980380}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &185980385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 185980380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea1d21662d7599448815128048c24097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  guideText: {fileID: 867097394}
 --- !u!1 &301415835 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4352acee836bc8a418e0608eb27c2d6b, type: 3}
@@ -502,6 +488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dfb392b642e7cc4792ac99fb2ceb296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  guideText: {fileID: 867097394}
   item: 
 --- !u!1 &867097392
 GameObject:
