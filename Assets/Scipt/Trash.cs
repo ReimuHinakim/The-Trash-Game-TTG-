@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class Trash : MonoBehaviour
 {
     public Text guideText;
-
+    public Text PointText;
+    private int Point;
     public string item;
 
     // Start is called before the first frame update
@@ -19,7 +20,7 @@ public class Trash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+     PointText.text = Point.ToString(); 
     }
     
 
@@ -31,7 +32,10 @@ public class Trash : MonoBehaviour
             item = "Trash";
             Destroy(collision.gameObject, 0.1f);
             guideText.text = "Go trash can to throw away";
-        }
+            Point += 1;
+        
+      
+        }  
 
        
 
