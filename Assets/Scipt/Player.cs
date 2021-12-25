@@ -34,64 +34,65 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             transform.position += transform.TransformDirection(Vector3.forward * moveSpeed * Time.deltaTime);
-            if (Input.GetKey(KeyCode.S))
-            {
-                transform.position += transform.TransformDirection(Vector3.back * moveSpeed * Time.deltaTime);
-            }
-            if (Input.GetKey(KeyCode.A))
-            {
-                transform.Rotate(new Vector3(0, -5, 0));
-            }
-            if (Input.GetKey(KeyCode.D))
-            {
-                transform.Rotate(new Vector3(0, 5, 0));
-            }
-
-            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
-            {
-                anim.SetBool("isRUn", true);
-            }
-
-            else
-            {
-                anim.SetBool("isRUn", false);
-            }
-
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                if (grounded == true)
-                {
-                    rb.AddForce(Vector3.up * jumpPower);
-                }
-            }
         }
-
-        public void OnCollisionEnter(Collision collision)
+        if (Input.GetKey(KeyCode.S))
         {
-            if (collision.gameObject.tag == "Ground")
-            {
-                grounded = true;
-            }
-
-            if (collision.gameObject.tag == "MoveFloor")
-            {
-                grounded = true;
-                transform.SetParent(collision.transform);
-            }
-
-
+            transform.position += transform.TransformDirection(Vector3.back * moveSpeed * Time.deltaTime);
         }
-
-        public void OnCollisionExit(Collision collision)
+        if (Input.GetKey(KeyCode.A))
         {
-            if (collision.gameObject.tag == "Ground")
+            transform.Rotate(new Vector3(0, -5, 0));
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.Rotate(new Vector3(0, 5, 0));
+        }
+
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
+        {
+            anim.SetBool("isRUn", true);
+        }
+
+        else
+        {
+            anim.SetBool("isRUn", false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (grounded == true)
             {
-                grounded = false;
+                rb.AddForce(Vector3.up * jumpPower);
             }
         }
 
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
+            grounded = true;
+        }
+
+        if (collision.gameObject.tag == "MoveFloor")
+        {
+            grounded = true;
+            transform.SetParent(collision.transform);
+        }
 
 
     }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
+            grounded = false;
+        }
+    }
+
+
+
+
 }
 

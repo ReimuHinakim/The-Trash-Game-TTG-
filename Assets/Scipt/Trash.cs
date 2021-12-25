@@ -20,29 +20,35 @@ public class Trash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     PointText.text = Point.ToString(); 
+        PointText.text = Point.ToString();
     }
-    
+
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Trash")
         {
-           
+
             item = "Trash";
             Destroy(collision.gameObject, 0.1f);
             guideText.text = "Go trash can to throw away";
-            Point += 1;
-        
-      
-        }  
 
-       
+
+
+        }
+
+
 
         if (collision.gameObject.tag == "CanTrash")
         {
-            item = "";
-            guideText.text = "Go Get Trash";
+            if (item == "Trash")
+            {
+                Point += 1;
+                item = "";
+                guideText.text = "Go Get Trash";
+            }
+
+
         }
 
     }

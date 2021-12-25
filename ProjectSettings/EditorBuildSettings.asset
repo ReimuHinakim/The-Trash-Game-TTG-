@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/TTG.unity
+    guid: f91ba7011d265ed409fc6e64dc6243ae
+  - enabled: 1
+    path: Assets/Scenes/Start(WAI).unity
+    guid: a1ed7087b1b1dac43a1e8d27e379c8ff
+  - enabled: 1
+    path: Assets/Scenes/Point time.unity
+    guid: 2267694801e299345a8c0c43ee08ea89
   m_configObjects: {}
