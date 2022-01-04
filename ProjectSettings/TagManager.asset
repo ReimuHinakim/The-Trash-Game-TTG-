@@ -7,7 +7,7 @@ TagManager:
   - Ground
   - CanTrash
   - Trash
-  - Playerf
+  - Can
   layers:
   - Default
   - TransparentFX
