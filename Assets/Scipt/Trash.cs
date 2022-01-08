@@ -7,8 +7,9 @@ public class Trash : MonoBehaviour
 {
     public Text guideText;
     public Text PointText;
-    private int Point;
+    public static int Point;
     public string item;
+    public int itemNum;
 
     // Start is called before the first frame update
     void Start()
@@ -26,13 +27,13 @@ public class Trash : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Can")
+        if (collision.gameObject.tag == "Can"&& itemNum<3)
         {
 
             item = "Can";
             Destroy(collision.gameObject, 0.1f);
             guideText.text = "Go trash can to throw away";
-
+            itemNum += 1;
 
 
         }
@@ -43,8 +44,9 @@ public class Trash : MonoBehaviour
         {
             if (item == "Can")
             {
-                Point += 1;
+                Point += itemNum;
                 item = "";
+                itemNum = 0;
                 guideText.text = "Go Get Trash";
             }
 

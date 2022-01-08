@@ -1143,6 +1143,7 @@ GameObject:
   - component: {fileID: 1692528431}
   - component: {fileID: 1692528433}
   - component: {fileID: 1692528432}
+  - component: {fileID: 1692528434}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1202,9 +1203,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'You Got :  Point And
-
-    You''ve Earn   Coin'
+  m_Text: 'You Got :  '
 --- !u!222 &1692528433
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1213,6 +1212,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692528430}
   m_CullTransparentMesh: 1
+--- !u!114 &1692528434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692528430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3ecfd3fa3f0a6c4ba6c62cba0bc912d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PointText: {fileID: 1692528432}
 --- !u!1001 &1858433190
 PrefabInstance:
   m_ObjectHideFlags: 0

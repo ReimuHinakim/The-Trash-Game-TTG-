@@ -13,7 +13,7 @@ public class TrashGenerater : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Generate", 1, 10);
+        InvokeRepeating("Generate", 1, 5);
     }
 
     // Update is called once per frame
@@ -24,8 +24,8 @@ public class TrashGenerater : MonoBehaviour
 
     void Generate()
     {
-        float x = Random.Range(-500, 500);
-        float z = Random.Range(-300, 300);
+        float x = Random.Range(-450, 500);
+        float z = Random.Range(0, 600);
         Instantiate(Ham, transform.position + new Vector3(x, 0, z), Quaternion.identity);
     }
 }
