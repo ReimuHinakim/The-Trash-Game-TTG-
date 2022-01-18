@@ -24,7 +24,7 @@ public class TrashGenerater : MonoBehaviour
 
     void Generate()
     {
-        int random = Random.Range(0, 2);
+        int random = Random.Range(0, 3);
         float x = Random.Range(-450, 500);
         float z = Random.Range(0, 600);
         Instantiate(TrashPrefabs[random], transform.position + new Vector3(x, 0, z), Quaternion.identity);

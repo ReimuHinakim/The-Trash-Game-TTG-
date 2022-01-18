@@ -44,8 +44,20 @@ public class Trash : MonoBehaviour
             Destroy(collision.gameObject, 0.1f);
             guideText.text = "Go trash can to throw away";
             itemNum += 1;
+
+
         }
-        
+        if (collision.gameObject.tag == "Hamburger" && itemNum < 3)
+        {
+            item = "Hamburger";
+            Destroy(collision.gameObject, 0.1f);
+            guideText.text = "Go trash can to throw away";
+            itemNum += 1;
+
+
+        }
+
+
 
 
 
@@ -59,8 +71,32 @@ public class Trash : MonoBehaviour
                 guideText.text = "Go Get Trash";
             }
 
+        }
+        if (collision.gameObject.tag == "CanTrash")
+        {
+            if (item == "Paper")
+            {
+                Point += itemNum;
+                item = "";
+                itemNum = 0;
+                guideText.text = "Go Get Trash";
+            }
 
         }
+        if (collision.gameObject.tag == "CanTrash")
+        {
+            if (item == "Hamburger") 
+            {
+                Point += itemNum;
+                item = "";
+                itemNum = 0;
+                guideText.text = "Go Get Trash";
+            }
+
+        }
+
+
+
 
     }
     void OnTriggerEnter(Collider other)
