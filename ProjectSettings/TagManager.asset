@@ -9,6 +9,8 @@ TagManager:
   - Trash
   - Can
   - Paper
+  - Hsm
+  - Hamburger
   layers:
   - Default
   - TransparentFX

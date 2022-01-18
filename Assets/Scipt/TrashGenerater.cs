@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class TrashGenerater : MonoBehaviour
 
-{   
-    public GameObject Ham;
+{
+    public GameObject[] TrashPrefabs;
     public float Lenth;
     public float Width;
 
@@ -19,13 +19,15 @@ public class TrashGenerater : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
     void Generate()
     {
+        int random = Random.Range(0, 2);
         float x = Random.Range(-450, 500);
         float z = Random.Range(0, 600);
-        Instantiate(Ham, transform.position + new Vector3(x, 0, z), Quaternion.identity);
+        Instantiate(TrashPrefabs[random], transform.position + new Vector3(x, 0, z), Quaternion.identity);
+
     }
 }

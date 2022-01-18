@@ -28,6 +28,7 @@ public class Trash : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Can"&& itemNum<3)
+
         {
 
             item = "Can";
@@ -37,6 +38,14 @@ public class Trash : MonoBehaviour
 
 
         }
+        if (collision.gameObject.tag == "Paper"&& itemNum < 3)
+        {
+            item = "Paper";
+            Destroy(collision.gameObject, 0.1f);
+            guideText.text = "Go trash can to throw away";
+            itemNum += 1;
+        }
+        
 
 
 
