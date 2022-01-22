@@ -12,7 +12,7 @@ public class Point : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PointText.text = "Your Got " + Trash.Point.ToString() + " Point";
+        PointText.text = "You Got " + Trash.Point.ToString() + " Point";
     }
 
     // Update is called once per frame

@@ -21,6 +21,6 @@ public class Itemnum : MonoBehaviour
     void Update()
     {
         Debug.Log(TrashScript.item);
-        HoldText.text = "You Have " + TrashScript.itemNum.ToString() + TrashScript.item.ToString() + " Now";
+      
     } 
 }

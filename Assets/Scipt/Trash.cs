@@ -10,6 +10,12 @@ public class Trash : MonoBehaviour
     public static int Point;
     public string item;
     public int itemNum;
+    public int[] itemNumbers;
+    public Text[] itemTextList;
+
+
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,28 +28,32 @@ public class Trash : MonoBehaviour
     void Update()
     {
         PointText.text = Point.ToString();
+        itemTextList[0].text = itemNumbers[0].ToString();
+        itemTextList[1].text = itemNumbers[1].ToString();
+        itemTextList[2].text = itemNumbers[2].ToString();
+
     }
 
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Can"&& itemNum<3)
+        if (collision.gameObject.tag == "Can" && itemNum < 3)
 
         {
 
             item = "Can";
             Destroy(collision.gameObject, 0.1f);
             guideText.text = "Go trash can to throw away";
-            itemNum += 1;
+            itemNumbers[0] += 1;
 
 
         }
-        if (collision.gameObject.tag == "Paper"&& itemNum < 3)
+        if (collision.gameObject.tag == "Paper" && itemNum < 3)
         {
             item = "Paper";
             Destroy(collision.gameObject, 0.1f);
             guideText.text = "Go trash can to throw away";
-            itemNum += 1;
+            itemNumbers[1] += 1;
 
 
         }
@@ -52,7 +62,7 @@ public class Trash : MonoBehaviour
             item = "Hamburger";
             Destroy(collision.gameObject, 0.1f);
             guideText.text = "Go trash can to throw away";
-            itemNum += 1;
+            itemNumbers[2] += 1;
 
 
         }
@@ -61,37 +71,17 @@ public class Trash : MonoBehaviour
 
 
 
-        if (collision.gameObject.tag == "CanTrash")
-        {
-            if (item == "Can")
-            {
-                Point += itemNum;
-                item = "";
-                itemNum = 0;
-                guideText.text = "Go Get Trash";
-            }
 
-        }
         if (collision.gameObject.tag == "CanTrash")
         {
-            if (item == "Paper")
-            {
-                Point += itemNum;
-                item = "";
-                itemNum = 0;
-                guideText.text = "Go Get Trash";
-            }
 
-        }
-        if (collision.gameObject.tag == "CanTrash")
-        {
-            if (item == "Hamburger") 
-            {
-                Point += itemNum;
-                item = "";
-                itemNum = 0;
-                guideText.text = "Go Get Trash";
-            }
+            Point += itemNumbers[0] ;
+            itemNumbers[0] = 0;
+            Point += itemNumbers[1] ;
+            itemNumbers[1] = 0;
+            Point += itemNumbers[2] * 2;
+            itemNumbers[2] = 0;
+            guideText.text = "Go Get Trash";
 
         }
 
