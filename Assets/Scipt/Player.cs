@@ -66,6 +66,12 @@ public class Player : MonoBehaviour
             }
         }
 
+        if(transform.position.y < -30)
+        {
+            transform.position = new Vector3(-158, 100, 56);
+        }
+
+
     }
     private void OnCollisionEnter(Collision collision)
     {
