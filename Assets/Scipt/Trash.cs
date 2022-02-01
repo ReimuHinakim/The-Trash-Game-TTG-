@@ -45,7 +45,7 @@ public class Trash : MonoBehaviour
             Destroy(collision.gameObject, 0.1f);
             guideText.text = "Go trash can to throw away";
             itemNumbers[0] += 1;
-
+            itemNum += 1;
 
         }
         if (collision.gameObject.tag == "Paper" && itemNum < 3)
@@ -54,6 +54,7 @@ public class Trash : MonoBehaviour
             Destroy(collision.gameObject, 0.1f);
             guideText.text = "Go trash can to throw away";
             itemNumbers[1] += 1;
+            itemNum += 1;
 
 
         }
@@ -63,6 +64,7 @@ public class Trash : MonoBehaviour
             Destroy(collision.gameObject, 0.1f);
             guideText.text = "Go trash can to throw away";
             itemNumbers[2] += 1;
+            itemNum += 1;
 
 
         }

@@ -936,6 +936,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Nights: {fileID: 2100000, guid: 8426cf3d3939a7d419671f3d5c269c0b, type: 2}
   Moring: {fileID: 2100000, guid: 67950864b84c5db4f9eee7ca51c85571, type: 2}
+  Rainy: {fileID: 2100000, guid: d1fdb8e44b28da34d9e922cca0bc740e, type: 2}
+  Sun: {fileID: 2100000, guid: 44d0573bf6d91e447b62f3aff840f2ae, type: 2}
+  Flask: {fileID: 2100000, guid: 7a8675eb396637d43b4ba0a69cc715a5, type: 2}
   rotateSpeed: 0.1
 --- !u!1 &867097392
 GameObject:
