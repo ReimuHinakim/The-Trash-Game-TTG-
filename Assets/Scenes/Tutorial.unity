@@ -148,17 +148,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149206159}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.5735764, w: 0.8191521}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1404871462}
+  m_Father: {fileID: 1342155983}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 3}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: -102, y: 45}
+  m_SizeDelta: {x: 80, y: 21.833336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &149206161
 MonoBehaviour:
@@ -181,22 +181,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 15
+    m_Font: {fileID: 12800000, guid: 161bb1f811842e043986a5f5a8b529aa, type: 3}
+    m_FontSize: 10
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 110
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '1.This is TRASH, you have to get closer to pick up the trash.
-
-    You
-    only can hold 3 trash at the time.'
+  m_Text: "1.This is TRASH, you have to get closer to pick up the trash.\nYou only
+    can hold 3 trash at the time.\r\n\u3053\u308C\u306F\u30B4\u30DF\u3067\u3059\u3002\r\n\u8FD1\u3065\u3044\u3066\u30B4\u30DF\u3092\u62FE\u3044\u30B4\u30DF\u7BB1\u306B\u6301\u3063\u3066\u3044\u3063\u3066\u304F\u3060\u3055\u3044\u3002\r\n\n"
 --- !u!222 &149206162
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -568,8 +566,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 15
+    m_Font: {fileID: 12800000, guid: 161bb1f811842e043986a5f5a8b529aa, type: 3}
+    m_FontSize: 10
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -580,10 +578,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '2.This is also trash. You can pick difflent type of trash. Can, paper,
-    and hamburger ( molded )
-
-    is count as 1 trash.'
+  m_Text: "2.This is also trash. You can pick difflent type of trash. Can, paper,
+    and hamburger ( molded )\nis  all count as 1 trash.\n\u30B4\u30DF\u3092\u6301\u3066\u308B\u306E\u306F\u5168\u90E8\u30673\u500B\u307E\u3067\u3067\u3059\u3002\r"
 --- !u!222 &942870997
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -698,9 +694,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: -0.5735764, w: 0.8191521}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 149206160}
   m_Father: {fileID: 1404871462}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -70}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -786,16 +783,15 @@ RectTransform:
   m_GameObject: {fileID: 1404871461}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 15}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 2}
   m_Children:
-  - {fileID: 149206160}
   - {fileID: 1342155983}
   m_Father: {fileID: 1951415315}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 376, y: 15}
+  m_AnchoredPosition: {x: 131, y: 94}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1404871463

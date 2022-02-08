@@ -963,7 +963,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -9.1}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1764103588
@@ -979,7 +979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -987,11 +987,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 161bb1f811842e043986a5f5a8b529aa, type: 3}
+    m_FontSize: 11
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -999,9 +999,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is trash can you can throw away your trash that you have right now
-    . When you get closer the trash will make you turn points. You can buy many stuff
-    like pets or new thing that you'll never see !
+  m_Text: "This is TrashCan, you can throw away the trash. When you get closer the
+    TrashCan t will turn into points. You can buy many new stuff !\n\u3053\u308C\u304C\u30B4\u30DF\u7BB1\u3067\u30B4\u30DF\u3092\u6368\u3066\u3089\u308C\u307E\u3059\u3002\r\u30B4\u30DF\u3092\u6368\u3066\u308B\u3068\u30DD\u30A4\u30F3\u30C8\n\u304C\u6E9C\u307E\u308A,\u30A2\u30A4\u30C6\u30E0\u3092\u8CFC\u5165\u3067\u304D\u307E\u3059\u3002\uFF08Coming
+    Soon!\uFF09\r\n\n"
 --- !u!222 &1764103589
 CanvasRenderer:
   m_ObjectHideFlags: 0

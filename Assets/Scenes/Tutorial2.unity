@@ -510,7 +510,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 161bb1f811842e043986a5f5a8b529aa, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -523,8 +523,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "When you get close to trash \n( Paper now ) the count numberwill change
-    it to 1 when the all counter is 3 of it you can't collect any trath so you hove
-    to go in trash can."
+    it to 1 when the all counter is 3 of it you can't collect any trath so you have
+    to go in trash can.\n\u30B4\u30DF\u30923\u500B\u6301\u3063\u3066\u3044\u308B\u3068\u307B\u304B\u306E\u30B4\u30DF\u304C\u62FE\u3048\u306A\u304F\u306A\u308B\u306E\u3067\u3001\u30B4\u30DF\u7BB1\u306B\u6368\u3066\u3066\u304B\u3089\u307B\u304B\u306E\u30B4\u30DF\u3092\u53D6\u308A\u306B\u884C\u304D\u307E\u3057\u3087\u3046\u3002"
 --- !u!222 &747207632
 CanvasRenderer:
   m_ObjectHideFlags: 0
