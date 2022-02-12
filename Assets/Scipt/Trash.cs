@@ -84,7 +84,8 @@ public class Trash : MonoBehaviour
             Point += itemNumbers[2] * 2;
             itemNumbers[2] = 0;
             guideText.text = "Go Get Trash";
-
+            itemNum = 0;
+            
         }
 
 
