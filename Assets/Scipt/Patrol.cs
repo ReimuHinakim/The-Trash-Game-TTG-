@@ -27,7 +27,7 @@ public class Patrol : MonoBehaviour
 
     void Update()
     {
-        if (!agent.pathPending && agent.remainingDistance < 0.5f)//もし、ポイントに近づいたら、
+        if (!agent.pathPending && agent.remainingDistance < 10f)//もし、ポイントに近づいたら、
         {
             GotoNextPoint();//次のポイントに変える
         }
