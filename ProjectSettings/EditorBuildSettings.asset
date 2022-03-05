@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/COMEI.unity
     guid: ed91fd4fabcbf9f49b40e8007dac3f36
+  - enabled: 1
+    path: Assets/Scenes/CHchoose.unity
+    guid: e0afad72539a56a4ab4ab5448b42bc9e
+  - enabled: 1
+    path: Assets/Scenes/Start(WAI)1.unity
+    guid: 05b2ea4acb023154c8709a5c316b4511
   m_configObjects: {}
